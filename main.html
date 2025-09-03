@@ -2,33 +2,156 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Favorite Holiday Destination</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily News</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            background-color: #011e29;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+
+        .section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .latest-news-section h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+            color: #333;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .latest-news-section ul {
+            list-style-type: disc;
+            padding: 0;
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .latest-news-section li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            line-height: 1.4;
+            color: #555;
+        }
+
+        .pictorial-news-section h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+            color: #333;
+            text-align: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .image-card {
+            text-align: center;
+            max-width: 280px;
+            flex-grow: 1;
+        }
+
+        .image-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .image-card h3 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .image-card p {
+            margin: 0;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
 </head>
 <body>
+    <div class="header">
+        <h1>The Daily News</h1>
+    </div>
 
-    <h1>Kyoto, Japan</h1>
-    <br>
+    <div class="container">
+        <!-- Latest News Section -->
+        <div class="latest-news-section section">
+            <h2>Latest News</h2>
+            <ul>
+                <li>
+                    <p>Financial Markets Soar to New Heights Amidst Tech Boom</p>
+                </li>
+                <li>
+                    <p>Local Community Rallies to Save Historic Landmark from Demolition</p>
+                </li>
+                <li>
+                    <p>Innovators Unveil Groundbreaking Renewable Energy Technology</p>
+                </li>
+            </ul>
+        </div>
 
-    <p>Kyoto, once the capital of Japan, is a beautiful city rich in cultural heritage, stunning temples, traditional tea houses, and serene gardens. It offers a unique blend of ancient traditions and modern experiences.</p>
-
-    <h2>Top 5 Attractions</h2>
-    <ol>
-        <li><strong>Kinkaku-ji</strong> (Golden Pavilion) – A stunning Zen temple covered in <em>gold leaf</em>.</li>
-        <li><em>Fushimi Inari Taisha</em> – Famous for its thousands of bright <strong>red torii gates</strong>.</li>
-        <li><strong>Arashiyama Bamboo Grove</strong> – Walk through towering <em>bamboo stalks</em> in this magical forest.</li>
-        <li><em>Gion District</em> – Explore Kyoto’s famous <strong>geisha culture</strong> and tea houses.</li>
-        <li><strong>Kiyomizu-dera</strong> – A historic temple offering <em>panoramic city views</em>.</li>
-    </ol>
-
-    <h2>Must-Try Foods</h2>
-    <ul>
-        <li><strong>Kaiseki</strong> – A traditional multi-course meal that is both <em>delicious and artistic</em>.</li>
-        <li><em>Yudofu</em> – A hot tofu dish often served in <strong>Zen temples</strong>.</li>
-        <li><strong>Matcha Sweets</strong> – Green tea flavored desserts like <em>mochi and ice cream</em>.</li>
-        <li><em>Soba Noodles</em> – Served hot or cold, these are made from <strong>buckwheat</strong>.</li>
-        <li><strong>Tempura</strong> – Lightly battered and <em>crispy vegetables and seafood</em>.</li>
-    </ul>
-
+        <!-- Pictorial News Section -->
+        <div class="pictorial-news-section section">
+            <h2>Pictorial News</h2>
+            <div class="image-gallery">
+                <div class="image-card">
+                    <img src="https://placehold.co/400x300/e0e0e0/555?text=Image_one" alt="A busy cityscape at night">
+                    <h3>Cityscape</h3>
+                    <p>Urban centers light up the night, bustling with activity.</p>
+                </div>
+                <div class="image-card">
+                    <img src="https://placehold.co/400x300/d0d0d0/555?text=Image_two" alt="An old, rustic bridge over a serene river">
+                    <h3>Old Bridge</h3>
+                    <p>A tranquil scene of a bridge connecting two sides of a river.</p>
+                </div>
+                <div class="image-card">
+                    <img src="https://placehold.co/400x300/c0c0c0/555?text=Image_three" alt="A mountain climber reaching the summit">
+                    <h3>Mountain Summit</h3>
+                    <p>Celebrating the achievement of reaching the mountain's peak.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
-
